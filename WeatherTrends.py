@@ -18,7 +18,8 @@ dfGlobal = pd.read_csv("Global.csv")
 
 plt.plot(dfIstanbul['year'],dfIstanbul['avg_temp'] ,label="Istanbul Data")
 plt.plot(dfGlobal['year'],dfGlobal['avg_temp'] ,label="Global Data")
-plt.title("Istanbul ve Global Grafiği") 
+plt.title("Istanbul and Global") 
 plt.legend()
 plt.show()
+
  
