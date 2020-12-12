@@ -16,10 +16,17 @@ import matplotlib.pyplot as plt
 dfIstanbul = pd.read_csv("Istanbul.csv")
 dfGlobal = pd.read_csv("Global.csv")
 
-plt.plot(dfIstanbul['year'],dfIstanbul['avg_temp'] ,label="Istanbul Data")
-plt.plot(dfGlobal['year'],dfGlobal['avg_temp'] ,label="Global Data")
-plt.title("Istanbul and Global") 
+ 
+ plt.plot(dfIstanbul['year'],dfIstanbul['avg_temp'] ,label="Istanbul Data") 
+ plt.plot(dfGlobal['year'],dfGlobal['avg_temp'] ,label="Global Data")  
+
+ 
+
 plt.legend()
+plt.title('Temperature in Istanbul and Global', fontsize=20)
+plt.xlabel('Year', fontsize=16)
+plt.ylabel('Temperature [°C]', fontsize=16)
+
 plt.show()
 
  
